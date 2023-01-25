@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+    background-color: #E5E5E5;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.container {
+    max-width: 1152px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100%;
+    margin: 0 auto;
+}
+.right-side {
+    background-color: #FFFFFF;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    margin-left: -20px;
+    max-height: 700px;
+}
+.left-side img {
+    object-fit: cover;
+}
+.logo-wrapper {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+}
+.ef-logo {
+    object-fit: cover;
+}
+.form-wrapper {
+    width: 100%;
+    justify-content: center;
+}
+.input-wrapper {
+    flex-direction: column;
+    margin-top: 14px;
+}
+label {
+    color: #003D61;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+::placeholder {
+    padding-left: 45px;
+    font-weight: 600;
+    color: #C4C4C4;
+}
+input {
+    width: 420px;
+    height: 35px;
+    border: 1px solid #003D61;
+    border-top: none;
+    border-right: none;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+.circle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #233D4ED4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.circle:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #FFFFFF;
+}
+.circle.round {
+    border-radius: 34px;
+}
+  
+.circle.round:before {
+    border-radius: 50%;
+}
+.terms-services {
+    margin-top: 59px;
+    width: 100%;
+    justify-content: center;
+}
+.terms-services p, .login p {
+    color: #003D61;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 9px;
+}
+.terms-services a, .login a {
+    color: #ED2980;
+}
+.login {
+    width: 100%;
+    justify-content: center;
+}
+.socials-wrapper {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+.social-with-margin {
+    margin-left: 71px;
+    position: relative;
+}
+.on-top-circle, .telegram-logo, .apple-logo {
+    position: absolute;
+}
+.on-top-circle {
+    top: 3.06px;
+    left: 3.06px;
+}
+.telegram-logo {
+    top: 13.78px;
+    left: 10.72px;
+}
+.apple-logo {
+    top: 10.72px;
+    left: 12.78px;
+}
