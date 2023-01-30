@@ -28,14 +28,14 @@ body {
   max-width: 600px;
   width: 100%;
   position: absolute;
-  margin-left: -20px;
-  max-height: 700px;
+  min-height: 700px;
   z-index: 50;
   right: -20px;
-  height: 706px;
 }
 .left-side {
   z-index: -1;
+  max-width: 600px;
+  width: 100%;
 }
 .left-side img {
   object-fit: cover;
@@ -47,7 +47,7 @@ body {
   justify-content: center;
 }
 .logo-wrapper-item {
-    justify-content: center;
+  justify-content: center;
 }
 .ef-logo {
   object-fit: cover;
@@ -60,17 +60,17 @@ body {
   flex-direction: column;
   margin-top: 14px;
 }
-label {
+.form-wrapper label {
   color: #003d61;
   font-weight: 600;
   margin-bottom: 10px;
 }
-::placeholder {
+.form-wrapper ::placeholder {
   padding-left: 45px;
   font-weight: 600;
   color: #c4c4c4;
 }
-input {
+.form-wrapper input {
   width: 420px;
   height: 35px;
   border: 1px solid #003d61;
@@ -130,7 +130,7 @@ input {
   width: 100%;
   justify-content: center;
 }
-.socials-wrapper {
+.desktop-socials-wrapper {
   width: 100%;
   justify-content: center;
   margin-top: 30px;
@@ -156,12 +156,36 @@ input {
   top: 10.72px;
   left: 12.78px;
 }
+.mobile-form-wrapper {
+  display: none;
+  max-width: 327px;
+  width: 100%;
+  margin: 0 auto;
+}
+.mobile-form-wrapper label{
+  font-size: 14px;
+  color: #B8B8B8;
+  font-weight: 500;
+}
+.mobile-form-wrapper ::placeholder {
+  font-weight: 600;
+  color: #c4c4c4;
+}
+.mobile-form-wrapper input {
+  border: 1px solid #4F4F4F4D;
+  max-width: 327px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-top: 16px;
+}
 @media (max-width: 1024px) {
-  .left-side {
-    width: 100%;
-  }
   .right-side {
     width: 100%;
+    right: 0px;
+    margin-top: -20px;  
+    display: flex;
+    flex-direction: column;
     right: 0px;
   }
   .container {
@@ -176,7 +200,20 @@ input {
   .login {
     display: none;
   }
-  .socials-wrapper {
-    display: none;
+  .mobile-form-wrapper {
+    display: block;
+  }
+  .forgot-password a {
+    color: #ed2980;
+    text-decoration: none;
+  }
+  .mobile-button-wrapper button {
+    max-width: 327px;
+    width: 100%;
+    height: 50px;
+    background-color: #003D61;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-top: 147px;
   }
 }
